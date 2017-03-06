@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+
+    <dimen name="banner_height">48dp</dimen>
+    <dimen name="btn_padding_left">12dp</dimen>
+    <dimen name="btn_padding_right">12dp</dimen>
+    <dimen name="btn_padding_top">3dp</dimen>
+    <dimen name="btn_padding_bottom">3dp</dimen>
+
+
+    <!--字体大小sp -->
+    <dimen name="t_16">16sp</dimen>
+    <dimen name="t_18">18sp</dimen>
+    <dimen name="t_20">20sp</dimen>
+    <dimen name="t_24">24sp</dimen>
+    <dimen name="t_28">28sp</dimen>
+    <dimen name="t_32">32sp</dimen>
+</resources>

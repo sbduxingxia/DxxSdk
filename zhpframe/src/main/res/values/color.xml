@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tran_black">#60000000</color>
+
+    <color name="title_bg">#3F51B5</color>
+    <color name="title_txt">#fff</color>
+    <color name="popup_save_txt">#a0a0a0</color>
+    <color name="dialog_bg">#fff</color>
+    <color name="banner_bg">#787878</color>
+    <color name="banner_txt_color">#fff</color>
+    <color name="dialog_content_color">#000</color>
+    <color name="btn_ok_bg">#32c927</color>
+    <color name="btn_ok_bg_foucus">#239e1a</color>
+    <color name="btn_cancel_bg">#f9251a</color>
+    <color name="btn_disable_bg">#c4c3c3</color>
+    <color name="progressbar_tips">#aaaaaa</color>
+    <color name="btn_cancel_bg_foucus">#d71409</color>
+    <color name="box_bg_gray">#5f2f2f2f</color>
+    <color name="loading_tips">#d4d4d4</color>
+
+    <!--自定义titlebar的颜色配置-->
+    <color name="colorPrimary">#3F51B5</color><!--标题背景色-->
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTitleTxt">#fff</color>
+    <color name="colorRightTxt">#ee1111</color>
+</resources>

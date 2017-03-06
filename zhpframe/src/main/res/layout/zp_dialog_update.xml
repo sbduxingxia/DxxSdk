@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    style="@style/Dialog">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="0dp"
+        android:background="@color/dialog_bg"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+         <FrameLayout
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/banner_height"
+             android:background="@color/banner_bg">
+             <TextView
+                 android:id="@+id/zp_update_title"
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:gravity="center_vertical"
+                 android:layout_gravity="center_horizontal"
+                 android:textColor="@color/banner_txt_color"
+                 android:textSize="@dimen/t_20"
+                 android:text="更新提醒"/>
+         </FrameLayout>
+
+         <FrameLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <TextView
+                 android:id="@+id/zp_update_tips"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="16dp"
+                 android:textSize="@dimen/t_16"
+                 android:text="亲，有新版本发布了，要更新吗？"/>
+         </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/zp_update_progress_lnly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/zp_update_progress_tips"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/t_16"
+                android:textColor="@color/progressbar_tips"
+                android:text="45%"/>
+
+
+
+            <ProgressBar
+                android:id="@+id/zp_update_progress"
+                android:layout_width="match_parent"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_height="4dp"
+                android:max="100"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:secondaryProgress="50"
+                android:progress="40"
+                android:progressDrawable="@drawable/x_progress_bar"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/banner_height"
+            android:orientation="horizontal"
+            android:layout_margin="16dp"
+            android:gravity="right|center_vertical"
+            tools:ignore="RtlHardcoded">
+
+           <Button
+               android:id="@+id/zp_update_cancel"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/x_btn_cancel"
+               android:textColor="@color/banner_txt_color"
+               android:layout_marginRight="16dp"
+               android:textSize="@dimen/t_16"
+               android:text="取  消"/>
+
+           <Button
+               android:id="@+id/zp_update_ok"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="@dimen/t_16"
+               android:background="@drawable/x_btn_ok"
+               android:textColor="@color/banner_txt_color"
+               android:enabled="true"
+               android:text="确  定"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
