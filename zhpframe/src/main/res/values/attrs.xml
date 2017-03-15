@@ -76,5 +76,17 @@
         <attr name="ptrDrawableTop" format="reference" />
         <attr name="ptrDrawableBottom" format="reference" />
     </declare-styleable>
-
+    <declare-styleable name="StarRating">
+        <!--星星间距-->
+        <attr format="dimension" name="starDistance" />
+        <!--星星大小-->
+        <attr format="dimension" name="starSize" />
+        <!--星星个数-->
+        <attr format="integer" name="starCount" />
+        <!--星星空图-->
+        <attr format="reference" name="starEmpty" />
+        <!--星星满图-->
+        <attr format="reference" name="starFill" />
+        <attr format="boolean" name="ratingInteger" />
+    </declare-styleable>
 </resources>

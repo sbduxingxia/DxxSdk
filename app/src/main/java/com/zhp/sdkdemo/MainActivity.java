@@ -19,9 +19,9 @@ import com.zhp.sdk.loading.LoadingManager;
 import com.zhp.sdk.update.IUpdateInfo;
 import com.zhp.sdk.update.IUpdateListener;
 import com.zhp.sdk.update.UpdateManager;
-import com.zhp.sdk.widget.ISpannerText;
-import com.zhp.sdk.widget.ListViewPopup;
-import com.zhp.sdk.widget.SpnnerWheelPopup;
+import com.zhp.sdk.widget.popup.ISpannerText;
+import com.zhp.sdk.widget.popup.ListViewPopup;
+import com.zhp.sdk.widget.popup.SpnnerWheelPopup;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -250,6 +250,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             listViewPopup.setAdapter(baseAdapter, 40);
             listViewPopup.setTitle("字符串显示");
             listViewPopup.show();
+        } else if (v.getId() == R.id.diy_view) {
+            gotoIntent(DiyViewActivity.class);
         }
     }
 

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:starrating="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <com.zhp.sdk.widget.select.StarRating
+            android:id="@+id/starRating1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            starrating:ratingInteger="true"
+            starrating:starCount="5"
+            starrating:starDistance="5dp"
+            starrating:starEmpty="@drawable/bad_icon"
+            starrating:starFill="@drawable/praise_icon"
+            starrating:starSize="30dp" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/starRatingTxt1"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <com.zhp.sdk.widget.select.StarRating
+            android:id="@+id/starRating2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            starrating:starEmpty="@drawable/bad_icon"
+            starrating:starFill="@drawable/praise_icon"
+            starrating:starDistance="5dp"
+            starrating:starCount="5"
+            starrating:starSize="30dp"
+            starrating:ratingInteger="false" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/starRatingTxt2"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -26,7 +26,7 @@
         <activity android:name=".PullToFreshListActivity" />
         <activity android:name=".TabViewPageActivity" />
         <activity android:name=".CallingRecordActivity" />
-
+        <activity android:name=".DiyViewActivity" />
         <service android:name=".service.RecordCallService" />
 
     </application>
