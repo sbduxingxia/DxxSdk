@@ -22,6 +22,7 @@
             android:id="@+id/progressBar"
             android:indeterminateDrawable="@drawable/x_loading"
             android:layout_gravity="center" />
+
         <TextView
             android:id="@+id/loading_tips"
             android:layout_width="match_parent"
@@ -30,7 +31,7 @@
             android:gravity="center"
             android:layout_marginTop="8dp"
             android:textSize="@dimen/t_16"
-            android:text="正在加载"/>
+            android:text="正在加载" />
     </LinearLayout>
 
 

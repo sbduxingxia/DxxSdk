@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
-        <item android:id="@android:id/background">
-            <shape>
-                <corners android:radius="4dip" />
-                <gradient
-                    android:startColor="#e4e4e4"
-                    android:centerColor="#e8e8e8"
-                    android:endColor="#fff"
-                    android:angle="90"
-                    />
-                <solid android:color="#e4e4e4" />
-            </shape>
-        </item>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="4dip" />
+            <gradient
+                android:startColor="#e4e4e4"
+                android:centerColor="#e8e8e8"
+                android:endColor="#fff"
+                android:angle="90" />
+            <solid android:color="#e4e4e4" />
+        </shape>
+    </item>
     <!-- 第二条进度条颜色 -->
     <item android:id="@android:id/secondaryProgress">
         <clip>
             <shape>
-                <corners android:radius="4dp"
+                <corners
+                    android:radius="4dp"
                     android:bottomRightRadius="4dp"
-                    android:topRightRadius="4dp"/>
+                    android:topRightRadius="4dp" />
                 <gradient
                     android:angle="0.0"
                     android:centerY="0.0"
@@ -31,9 +31,10 @@
     <item android:id="@android:id/progress">
         <clip>
             <shape>
-                <corners android:radius="4dp"
+                <corners
+                    android:radius="4dp"
                     android:bottomRightRadius="4dp"
-                    android:topRightRadius="4dp"/>
+                    android:topRightRadius="4dp" />
                 <solid android:color="#34b60c" />
             </shape>
         </clip>

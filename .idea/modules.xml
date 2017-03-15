@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ZhpSdk.iml" filepath="$PROJECT_DIR$/.idea/modules/ZhpSdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZhpSdk.iml" filepath="$PROJECT_DIR$/ZhpSdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zhpframe/zhpframe.iml" filepath="$PROJECT_DIR$/zhpframe/zhpframe.iml" />
     </modules>
   </component>
 </project>

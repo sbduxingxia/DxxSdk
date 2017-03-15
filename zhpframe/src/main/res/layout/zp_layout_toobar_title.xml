@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:layout_alignParentLeft="true"
-              android:gravity="center"
-              android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:gravity="center"
+    android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/titleContainer"
@@ -18,7 +18,7 @@
             android:layout_height="30dp"
             android:layout_centerVertical="true"
             android:background="@drawable/x_btn_back"
-            android:padding="3dp"/>
+            android:padding="3dp" />
 
         <TextView
             android:id="@+id/titleCenter"
@@ -27,7 +27,7 @@
             android:layout_centerInParent="true"
             android:text="SDK测试"
             android:textColor="@color/colorTitleTxt"
-            android:textSize="@dimen/t_18"/>
+            android:textSize="@dimen/t_18" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -48,7 +48,7 @@
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
                 android:scaleType="centerInside"
-                android:visibility="gone"/>
+                android:visibility="gone" />
 
             <TextView
                 android:id="@+id/titleRightTV"
@@ -61,7 +61,7 @@
                 android:minWidth="70dp"
                 android:textColor="@color/colorRightTxt"
                 android:text=""
-                android:textSize="@dimen/t_16"/>
+                android:textSize="@dimen/t_16" />
         </LinearLayout>
 
     </RelativeLayout>
