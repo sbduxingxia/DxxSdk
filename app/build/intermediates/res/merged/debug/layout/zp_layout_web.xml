@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@+id/web_swipeRefreshLayout"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+        <WebView android:id="@+id/web_webv" android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <ProgressBar android:id="@+id/web_load_progress" android:layout_width="match_parent"
+        style="?android:attr/progressBarStyleHorizontal" android:layout_height="1dp"
+        android:max="100" android:progress="40"
+        android:progressDrawable="@drawable/x_progress_bar" />
+</RelativeLayout>
