@@ -31,3 +31,6 @@ proguard/
 
 #app
 app/build/
+
+#webshell
+webshell/build/
