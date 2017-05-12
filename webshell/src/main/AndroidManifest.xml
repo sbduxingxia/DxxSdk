@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zhp.sdkdemo">
+    package="com.haier.webshell">
+
     <!-- 监听电话状态权限 -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <!-- 刻入声音权限 -->
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <!-- 在SDCard中创建与删除文件权限 -->
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
-    <!--拨打电话权限-->
-    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -17,19 +15,14 @@
         android:supportsRtl="true"
         android:name="com.zhp.sdk.BaseApp"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@android:style/Theme.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PullToFreshListActivity" />
-        <activity android:name=".TabViewPageActivity" />
-        <activity android:name=".CallingRecordActivity" />
-        <activity android:name=".DiyViewActivity" />
-        <service android:name=".service.RecordCallService" />
-
     </application>
 
 </manifest>

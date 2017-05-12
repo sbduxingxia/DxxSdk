@@ -27,8 +27,15 @@ public class BaseActivity extends AppCompatActivity {
     private TextView centerTitle;
     private TextView titleRightTxt;
     private ImageView titleImage;
+
+    public boolean skipInvokeBaseActivity() {
+        return false;
+    }
     @Override
     public void setContentView(@LayoutRes int layoutResID) {
+        if (skipInvokeBaseActivity()) {
+            return;
+        }
 //        super.setContentView(layoutResID);
         mToolBarHelper = new ToolBarHelper(this,layoutResID);
         toolbar = mToolBarHelper.getToolBar();

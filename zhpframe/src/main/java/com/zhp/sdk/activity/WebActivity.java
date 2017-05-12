@@ -1,5 +1,6 @@
 package com.zhp.sdk.activity;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -35,10 +36,11 @@ public class WebActivity extends BaseActivity {
     WebView webView;
     String url = null;
     String title = null;
-    SwipeRefreshLayout swipeRefreshLayout;
-    ArrayList<IJsPlus> jsPlus;
-    ProgressBar progressBar;
 
+
+    SwipeRefreshLayout swipeRefreshLayout;
+    ArrayList<IJsPlus> jsPlus = new ArrayList<>();
+    ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +49,7 @@ public class WebActivity extends BaseActivity {
         initViews();
         restoreFromIntent(getIntent());
         setTitle(title);
-        if (TextUtils.isEmpty(url) || "http://#".equals(url)) {
+        if (TextUtils.isEmpty(url)) {
             finish();
             return;
         }
@@ -171,10 +173,7 @@ public class WebActivity extends BaseActivity {
             }
         }
         webView.loadUrl(url);
-
     }
-
-
     private void initViews(){
         swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.web_swipeRefreshLayout);
         webView = (WebView) findViewById(R.id.web_webv);
@@ -183,7 +182,9 @@ public class WebActivity extends BaseActivity {
 
     @Override
     protected void onDestroy() {
-        webView.loadUrl("about:blank");//显示空白页
+        if (webView != null) {
+            webView.loadUrl("about:blank");//显示空白页
+        }
         super.onDestroy();
     }
 
@@ -202,13 +203,28 @@ public class WebActivity extends BaseActivity {
         return intent;
     }
     private void restoreFromIntent(Intent intent) {
-        this.url = intent.getStringExtra(ARG_URL);
-        this.title = intent.getStringExtra(ARG_TITLE);
-        this.jsPlus = (ArrayList<IJsPlus>) intent.getSerializableExtra(ARG_PLUS);
+        if (intent == null) return;
+        if (TextUtils.isEmpty(this.url) && intent.hasExtra(ARG_URL)) {
+            this.url = intent.getStringExtra(ARG_URL);
+        }
+        if (intent.hasExtra(ARG_TITLE))
+            this.title = intent.getStringExtra(ARG_TITLE);
+        if (intent.hasExtra(ARG_PLUS))
+            this.jsPlus = (ArrayList<IJsPlus>) intent.getSerializableExtra(ARG_PLUS);
     }
 
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public void addJsPlus(IJsPlus onePlus) {
+        if (this.jsPlus == null) return;
+        this.jsPlus.add(onePlus);
+
     }
 }

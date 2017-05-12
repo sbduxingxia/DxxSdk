@@ -32,6 +32,12 @@ public class ZhpJsPlus implements IJsPlus {
         }
     }
 
+    public static void addPlusToWeb(WebView webView, String plusName) {
+        if (webView != null) {
+            ZhpJsPlus jsPlus = new ZhpJsPlus(webView);
+            webView.addJavascriptInterface(jsPlus, plusName);
+        }
+    }
     protected WebView webView;
     public ZhpJsPlus(WebView obj){
         this.webView =obj;

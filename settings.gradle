@@ -1,1 +1,1 @@
-include ':app', ':zhpframe'
+include ':app', ':zhpframe', ':webshell'
