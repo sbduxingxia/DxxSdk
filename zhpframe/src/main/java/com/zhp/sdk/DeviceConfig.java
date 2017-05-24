@@ -50,12 +50,17 @@ public class DeviceConfig implements IConstKey {
         if (isInited) {
             return;
         }
-        TelephonyManager tm = (TelephonyManager) BaseApp.getInstance().getSystemService(Context.TELEPHONY_SERVICE);
-        StringBuilder sb = new StringBuilder();
-        deviceId = tm.getDeviceId();
-        deviceSoftwareVersion = tm.getDeviceSoftwareVersion();
-        networkOperatorName = tm.getNetworkOperatorName();
-        isInited = true;
+
+        try {
+            TelephonyManager tm = (TelephonyManager) BaseApp.getInstance().getSystemService(Context.TELEPHONY_SERVICE);
+            StringBuilder sb = new StringBuilder();
+            deviceId = tm.getDeviceId();
+            deviceSoftwareVersion = tm.getDeviceSoftwareVersion();
+            networkOperatorName = tm.getNetworkOperatorName();
+            isInited = true;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }

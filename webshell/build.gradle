@@ -30,6 +30,12 @@ android {
 
         }
     }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
     buildTypes {
         debug {
             minifyEnabled false
@@ -52,4 +58,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
     testCompile 'junit:junit:4.12'
     compile project(':zhpframe')
+    compile(name: 'ShortcutBadger-release', ext: 'aar')
 }

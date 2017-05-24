@@ -138,5 +138,4 @@ public class BaseApp extends Application{
         return deviceConfig;
     }
 
-
 }

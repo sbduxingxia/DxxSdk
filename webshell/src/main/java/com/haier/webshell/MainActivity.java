@@ -14,6 +14,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.webkit.ConsoleMessage;
 import android.webkit.DownloadListener;
+import android.webkit.JavascriptInterface;
 import android.webkit.JsPromptResult;
 import android.webkit.JsResult;
 import android.webkit.ValueCallback;
@@ -24,14 +25,13 @@ import android.webkit.WebViewClient;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 
+import com.haier.webshell.service.BaseService;
+import com.zhp.sdk.Tip;
 import com.zhp.sdk.utils.FileUtils;
 import com.zhp.sdk.utils.SharedPreferencesUtils;
 import com.zhp.sdk.utils.StringUtils;
 import com.zhp.sdk.webplus.IJsPlus;
 import com.zhp.sdk.webplus.ZhpJsPlus;
-
-import org.w3c.dom.Text;
-
 import java.io.File;
 import java.util.ArrayList;
 
@@ -43,10 +43,13 @@ public class MainActivity extends Activity {
     private static final String ARG_TITLE = "arg_title";
     private static final String ARG_URL = "arg_url";
     private static final String ARG_PLUS = "arg_plus";
+    public static final String ARG_UID = "arg_uid";
+    public static final String ARG_TERMINAL = "arg_terminal";//时间间隔
     private final static int FILECHOOSER_RESULTCODE = 1;
     private final static int FILESCHOOSER_RESULTCODE = 2;
     WebView webView;
-    String url = "";//"file:///android_asset/xxx.html";
+    protected String url = "http://123.103.113.194:8090/russiaFactory/factory/login.jsp";
+    //http://123.103.113.194:8090/russiaFactory/factory/login.jsp";//http://lapp.haier.net:8090/russiaFactory/factory/login.jsp";//"file:///android_asset/jsplus.html";//
     String title = null;
 
 
@@ -68,7 +71,8 @@ public class MainActivity extends Activity {
         if (TextUtils.isEmpty(url)) {
             inputUrlDialog();
         }
-        longClickListener();
+        //长按更换地址
+//        longClickListener();
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
@@ -76,7 +80,7 @@ public class MainActivity extends Activity {
         webSettings.setBuiltInZoomControls(true);
         webSettings.setUseWideViewPort(true);
         webSettings.setLoadWithOverviewMode(true);
-        webSettings.setCacheMode(WebSettings.LOAD_DEFAULT);
+        webSettings.setCacheMode(WebSettings.LOAD_NO_CACHE);
         webSettings.setDomStorageEnabled(true);
         webView.setWebChromeClient(new WebChromeClient() {
             @Override
@@ -256,9 +260,43 @@ public class MainActivity extends Activity {
                 webView.addJavascriptInterface(iJsPlus.getPlusObject(), iJsPlus.getPlusName());
             }
         }
+        initLocalJSInterface();
         loadUrl(url);
+        BaseService.startBaseService(getApplicationContext());
+//        testShortCut();
     }
 
+    private void testShortCut() {
+        BaseService.startBaseService(getApplicationContext());
+        SharedPreferencesUtils.setParam(getApplicationContext(), ARG_UID, "9992");
+    }
+
+    private void initLocalJSInterface() {
+        if (webView != null) {
+            webView.addJavascriptInterface(new HLocalJs(), "HLocalJs");
+
+        }
+    }
+
+    class HLocalJs {
+        public HLocalJs() {
+
+        }
+
+        @JavascriptInterface
+        public boolean saveUid(String uid) {
+            SharedPreferencesUtils.setParam(getApplicationContext(), ARG_UID, uid);
+//            Tip.show("已将用户ID:"+uid+" 存到本地");
+            return true;
+        }
+
+        @JavascriptInterface
+        public boolean freshUnreadMessage() {
+            BaseService.addOneCommand(System.currentTimeMillis());
+//            Tip.show("已收到刷新未读消息的请求，请求用户ID:"+SharedPreferencesUtils.getParam(getApplicationContext(), ARG_UID,""));
+            return true;
+        }
+    }
     private void loadUrl(String url) {
         if (TextUtils.isEmpty(url)) {
             webView.loadUrl("about:blank");
@@ -315,6 +353,7 @@ public class MainActivity extends Activity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+        finish();
     }
 
     public void setUrl(String url) {

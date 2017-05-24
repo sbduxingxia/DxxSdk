@@ -65,6 +65,11 @@ public class ZhpJsPlus implements IJsPlus {
         return String.valueOf(BaseApp.getInstance().getDeviceConfig().sdkVersion);
     }
     @JavascriptInterface
+    public String getVersion() {
+        return String.valueOf(BaseApp.getInstance().getDeviceConfig().versionCode);
+    }
+
+    @JavascriptInterface
     public boolean canGoBack(){
         if(webView!=null){
             return webView.canGoBack();
@@ -94,4 +99,5 @@ public class ZhpJsPlus implements IJsPlus {
     public void toast(String msg){
         Tip.show(msg);
     }
+
 }

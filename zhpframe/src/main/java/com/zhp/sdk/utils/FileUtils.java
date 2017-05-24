@@ -9,6 +9,7 @@ import android.os.Build;
 import android.os.Environment;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
+import android.text.TextUtils;
 import android.webkit.MimeTypeMap;
 
 import java.io.BufferedInputStream;
@@ -117,13 +118,18 @@ public class FileUtils {
 			if (isExternalStorageDocument(uri)) {
 				final String docId = DocumentsContract.getDocumentId(uri);
 				final String[] split = docId.split(":");
-				final String type = split[0];
+                if (split.length >= 2) {
+                    final String type = split[0];
+                    if ("primary".equalsIgnoreCase(type)) {
+                        return Environment.getExternalStorageDirectory() + "/" + split[1];
+                    }
+                    if (!TextUtils.isEmpty(type)) {
+                        return Environment.getExternalStorageDirectory() + "/" + split[1];
+                    }
+                }
 
-				if ("primary".equalsIgnoreCase(type)) {
-					return Environment.getExternalStorageDirectory() + "/" + split[1];
-				}
 
-				// TODO handle non-primary volumes
+                // TODO handle non-primary volumes
 			}
 			// DownloadsProvider
 			else if (isDownloadsDocument(uri)) {
