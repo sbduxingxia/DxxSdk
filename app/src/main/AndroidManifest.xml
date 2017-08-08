@@ -28,6 +28,7 @@
         <activity android:name=".TabViewPageActivity" />
         <activity android:name=".CallingRecordActivity" />
         <activity android:name=".DiyViewActivity" />
+        <activity android:name=".TagFlowActivity" />
         <service android:name=".service.RecordCallService" />
 
     </application>

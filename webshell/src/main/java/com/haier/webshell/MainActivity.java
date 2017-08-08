@@ -48,7 +48,7 @@ public class MainActivity extends Activity {
     private final static int FILECHOOSER_RESULTCODE = 1;
     private final static int FILESCHOOSER_RESULTCODE = 2;
     WebView webView;
-    protected String url = "http://123.103.113.194:8090/russiaFactory/factory/login.jsp";
+    protected String url = "http://b2eapp.speedws.com:8090/russiaFactory/factory/login.jsp";// "http://123.103.113.194:8090/russiaFactory/factory/login.jsp";
     //http://123.103.113.194:8090/russiaFactory/factory/login.jsp";//http://lapp.haier.net:8090/russiaFactory/factory/login.jsp";//"file:///android_asset/jsplus.html";//
     String title = null;
 
