@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/xs_btn_ok" android:state_pressed="false" android:state_enabled="true" />
-    <item android:drawable="@drawable/xs_btn_ok_foucus" android:state_pressed="true" android:state_enabled="true"></item>
-    <item android:drawable="@drawable/xs_btn_disable" android:state_enabled="false" />
-</selector>
