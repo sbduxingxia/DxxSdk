@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:2:1-33:12
+ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:2:1-36:12
 	package
 		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:3:5-30
 		INJECTED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml
@@ -14,107 +14,112 @@ ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:2:1-33:12
 		INJECTED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml
 		INJECTED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:5:5-74
+ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:5:5-75
 	android:name
 		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:5:22-72
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:7:5-70
+ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:7:5-71
 	android:name
 		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:7:22-68
 uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
-ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:9:5-83
+ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:9:5-84
 	android:name
 		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:9:22-81
 uses-permission#android.permission.CALL_PHONE
-ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:11:5-68
+ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:11:5-69
 	android:name
 		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:11:22-66
+uses-permission#android.permission.INTERNET
+ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:12:5-67
+MERGED from [ZhpSdk:zhpframe:unspecified] D:\zhp.sdk\ZhpSdk\zhpframe\build\intermediates\bundles\default\AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:12:22-64
 application
-ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:12:5-31:19
-MERGED from [ZhpSdk:zhpframe:unspecified] D:\zhp.sdk\ZhpSdk\zhpframe\build\intermediates\bundles\default\AndroidManifest.xml:15:5-20:19
-MERGED from [com.android.support:design:24.2.0] C:\Users\01432709\.android\build-cache\a0d7805fc10655ce8a256c7a5d1fc0eefb87bafd\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:24.2.0] C:\Users\01432709\.android\build-cache\512942c8a60e713afc12376bc68a720b74b348eb\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:24.2.0] C:\Users\01432709\.android\build-cache\732b96c14928d0d3727634019d5d6599820ca988\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:24.2.0] C:\Users\01432709\.android\build-cache\16866e40810e2134a1aec70cb9235c4d72fb3826\output\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-v4:24.2.0] C:\Users\01432709\.android\build-cache\971307459e730961c9ad7c96b646c8f1ffc78aaf\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:24.2.0] C:\Users\01432709\.android\build-cache\8c9536016387142c7af3dec135c3863a1526b7dd\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:24.2.0] C:\Users\01432709\.android\build-cache\2bd3fda9c8c5420802298664f07480447417a8d5\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:24.2.0] C:\Users\01432709\.android\build-cache\3b429c5f90ed0a3dc5a6fdac5370fb1f3fadc2ac\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:24.2.0] C:\Users\01432709\.android\build-cache\c378034cfd2133a6145f6bdbf9ee2d9b83f27a16\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] C:\Users\01432709\.android\build-cache\d7f4ac07c986a86820a0248d2c18ca0c0e164b5e\output\AndroidManifest.xml:25:5-20
+ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:13:5-34:19
+MERGED from [ZhpSdk:zhpframe:unspecified] D:\zhp.sdk\ZhpSdk\zhpframe\build\intermediates\bundles\default\AndroidManifest.xml:15:5-19:19
+MERGED from [com.android.support:design:24.2.0] C:\Users\01432709\.android\build-cache\e9db0a85ffde7cb3ebd8c948e0a6fa2586e5f201\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:24.2.0] C:\Users\01432709\.android\build-cache\886211bbcc9f5420978530ac26400246aa3b5377\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.2.0] C:\Users\01432709\.android\build-cache\29cbb6d36886170773901173df2bd385b7ef6323\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:24.2.0] C:\Users\01432709\.android\build-cache\0645ed8f0a2e139354fc6d6118a8471e771e6a0d\output\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-v4:24.2.0] C:\Users\01432709\.android\build-cache\e9fc73a2b1dc6bcd422b9b948b73fce4e210b2a0\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:24.2.0] C:\Users\01432709\.android\build-cache\bb7b2b68cc911c380c585637c46464279d8bfac9\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.0] C:\Users\01432709\.android\build-cache\d1d1ff173cc81f7434d4633b5c39ce078ab97fb4\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.0] C:\Users\01432709\.android\build-cache\e754a0299e11fb314fdeb9caaff3964715a693f1\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.0] C:\Users\01432709\.android\build-cache\0bd6de4e55c4c5fc1e0a0f4a17e1a50a3ac4f816\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.0] C:\Users\01432709\.android\build-cache\7ce4a75b02007fe72de71e73b3c4f41fd9637e1c\output\AndroidManifest.xml:25:5-20
 	android:label
-		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:15:9-41
+		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:16:9-41
 	android:supportsRtl
-		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:17:9-35
 	android:allowBackup
-		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:13:9-35
+		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:14:9-35
 	android:icon
-		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:14:9-45
+		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:15:9-45
 	android:theme
-		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:18:9-40
+		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:19:9-40
 	android:name
-		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:17:9-43
+		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:18:9-43
 activity#com.zhp.sdkdemo.MainActivity
-ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:19:9-25:20
+ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:20:9-26:20
 	android:name
-		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:19:19-47
+		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:20:19-47
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:20:13-24:29
+ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:21:13-25:29
 action#android.intent.action.MAIN
-ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:21:17-69
+ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:21:25-66
+		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:23:17-77
+ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:24:17-77
 	android:name
-		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:23:27-74
+		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:24:27-74
 activity#com.zhp.sdkdemo.PullToFreshListActivity
-ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:26:9-61
+ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:27:9-61
 	android:name
-		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:26:19-58
+		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:27:19-58
 activity#com.zhp.sdkdemo.TabViewPageActivity
-ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:27:9-57
+ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:28:9-57
 	android:name
-		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:27:19-54
+		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:28:19-54
 activity#com.zhp.sdkdemo.CallingRecordActivity
-ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:28:9-59
+ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:29:9-59
 	android:name
-		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:28:19-56
+		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:29:19-56
+activity#com.zhp.sdkdemo.DiyViewActivity
+ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:30:9-53
+	android:name
+		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:30:19-50
+activity#com.zhp.sdkdemo.TagFlowActivity
+ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:31:9-53
+	android:name
+		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:31:19-50
 service#com.zhp.sdkdemo.service.RecordCallService
-ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:29:9-62
+ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:32:9-62
 	android:name
-		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:29:18-59
+		ADDED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml:32:18-59
 uses-sdk
 INJECTED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [ZhpSdk:zhpframe:unspecified] D:\zhp.sdk\ZhpSdk\zhpframe\build\intermediates\bundles\default\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:design:24.2.0] C:\Users\01432709\.android\build-cache\a0d7805fc10655ce8a256c7a5d1fc0eefb87bafd\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:24.2.0] C:\Users\01432709\.android\build-cache\512942c8a60e713afc12376bc68a720b74b348eb\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:24.2.0] C:\Users\01432709\.android\build-cache\732b96c14928d0d3727634019d5d6599820ca988\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:24.2.0] C:\Users\01432709\.android\build-cache\16866e40810e2134a1aec70cb9235c4d72fb3826\output\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-v4:24.2.0] C:\Users\01432709\.android\build-cache\971307459e730961c9ad7c96b646c8f1ffc78aaf\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:24.2.0] C:\Users\01432709\.android\build-cache\8c9536016387142c7af3dec135c3863a1526b7dd\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-utils:24.2.0] C:\Users\01432709\.android\build-cache\2bd3fda9c8c5420802298664f07480447417a8d5\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-media-compat:24.2.0] C:\Users\01432709\.android\build-cache\3b429c5f90ed0a3dc5a6fdac5370fb1f3fadc2ac\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:recyclerview-v7:24.2.0] C:\Users\01432709\.android\build-cache\a6f76050f18acae764dc2cdb3c49bc71f4f5de26\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-core-ui:24.2.0] C:\Users\01432709\.android\build-cache\c378034cfd2133a6145f6bdbf9ee2d9b83f27a16\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:24.2.0] C:\Users\01432709\.android\build-cache\d7f4ac07c986a86820a0248d2c18ca0c0e164b5e\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:design:24.2.0] C:\Users\01432709\.android\build-cache\e9db0a85ffde7cb3ebd8c948e0a6fa2586e5f201\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:24.2.0] C:\Users\01432709\.android\build-cache\886211bbcc9f5420978530ac26400246aa3b5377\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:24.2.0] C:\Users\01432709\.android\build-cache\29cbb6d36886170773901173df2bd385b7ef6323\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:24.2.0] C:\Users\01432709\.android\build-cache\0645ed8f0a2e139354fc6d6118a8471e771e6a0d\output\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-v4:24.2.0] C:\Users\01432709\.android\build-cache\e9fc73a2b1dc6bcd422b9b948b73fce4e210b2a0\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:24.2.0] C:\Users\01432709\.android\build-cache\bb7b2b68cc911c380c585637c46464279d8bfac9\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:24.2.0] C:\Users\01432709\.android\build-cache\d1d1ff173cc81f7434d4633b5c39ce078ab97fb4\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-media-compat:24.2.0] C:\Users\01432709\.android\build-cache\e754a0299e11fb314fdeb9caaff3964715a693f1\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:recyclerview-v7:24.2.0] C:\Users\01432709\.android\build-cache\3f0bccf3549efd10705e1b8685d22f648eac699f\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-core-ui:24.2.0] C:\Users\01432709\.android\build-cache\0bd6de4e55c4c5fc1e0a0f4a17e1a50a3ac4f816\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:24.2.0] C:\Users\01432709\.android\build-cache\7ce4a75b02007fe72de71e73b3c4f41fd9637e1c\output\AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:24.2.0] C:\Users\01432709\.android\build-cache\512942c8a60e713afc12376bc68a720b74b348eb\output\AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:24.2.0] C:\Users\01432709\.android\build-cache\886211bbcc9f5420978530ac26400246aa3b5377\output\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml
 		INJECTED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml
 		INJECTED from D:\zhp.sdk\ZhpSdk\app\src\main\AndroidManifest.xml
-uses-permission#android.permission.INTERNET
-ADDED from [ZhpSdk:zhpframe:unspecified] D:\zhp.sdk\ZhpSdk\zhpframe\build\intermediates\bundles\default\AndroidManifest.xml:11:5-67
-	android:name
-		ADDED from [ZhpSdk:zhpframe:unspecified] D:\zhp.sdk\ZhpSdk\zhpframe\build\intermediates\bundles\default\AndroidManifest.xml:11:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from [ZhpSdk:zhpframe:unspecified] D:\zhp.sdk\ZhpSdk\zhpframe\build\intermediates\bundles\default\AndroidManifest.xml:13:5-81
 	android:name
 		ADDED from [ZhpSdk:zhpframe:unspecified] D:\zhp.sdk\ZhpSdk\zhpframe\build\intermediates\bundles\default\AndroidManifest.xml:13:22-78
-activity#com.zhp.sdk.activity.WebActivity
-ADDED from [ZhpSdk:zhpframe:unspecified] D:\zhp.sdk\ZhpSdk\zhpframe\build\intermediates\bundles\default\AndroidManifest.xml:19:9-69
-	android:name
-		ADDED from [ZhpSdk:zhpframe:unspecified] D:\zhp.sdk\ZhpSdk\zhpframe\build\intermediates\bundles\default\AndroidManifest.xml:19:19-66

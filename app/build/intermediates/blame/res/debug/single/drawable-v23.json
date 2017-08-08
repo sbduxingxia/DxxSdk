@@ -1,10 +1,6 @@
 [
     {
-        "merged": "D:\\zhp.sdk\\SDKTest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v23\\abc_control_background_material.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\drawable-v23\\abc_control_background_material.xml"
-    },
-    {
         "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v23\\abc_control_background_material.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\drawable-v23\\abc_control_background_material.xml"
+        "source": "C:\\Users\\01432709\\.android\\build-cache\\886211bbcc9f5420978530ac26400246aa3b5377\\output\\res\\drawable-v23\\abc_control_background_material.xml"
     }
 ]

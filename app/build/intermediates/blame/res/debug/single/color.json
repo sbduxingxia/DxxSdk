@@ -1,162 +1,82 @@
 [
     {
-        "merged": "D:\\zhp.sdk\\SDKTest\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_borderless_text_material.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_btn_colored_borderless_text_material.xml"
-    },
-    {
         "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_btn_checkable.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_tint_btn_checkable.xml"
-    },
-    {
-        "merged": "D:\\zhp.sdk\\SDKTest\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_default.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_tint_default.xml"
+        "source": "C:\\Users\\01432709\\.android\\build-cache\\886211bbcc9f5420978530ac26400246aa3b5377\\output\\res\\color\\abc_tint_btn_checkable.xml"
     },
     {
         "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\tab_selector.xml",
         "source": "D:\\zhp.sdk\\ZhpSdk\\app\\src\\main\\res\\color\\tab_selector.xml"
     },
     {
-        "merged": "D:\\zhp.sdk\\SDKTest\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\switch_thumb_material_dark.xml"
+        "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
+        "source": "C:\\Users\\01432709\\.android\\build-cache\\886211bbcc9f5420978530ac26400246aa3b5377\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
     },
     {
         "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_borderless_text_material.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_btn_colored_borderless_text_material.xml"
-    },
-    {
-        "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_search_url_text.xml"
-    },
-    {
-        "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_seek_thumb.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_tint_seek_thumb.xml"
-    },
-    {
-        "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\switch_thumb_material_light.xml"
-    },
-    {
-        "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
-    },
-    {
-        "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_primary_text_material_dark.xml"
-    },
-    {
-        "merged": "D:\\zhp.sdk\\SDKTest\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_primary_text_material_light.xml"
-    },
-    {
-        "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_primary_text_material_light.xml"
-    },
-    {
-        "merged": "D:\\zhp.sdk\\SDKTest\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_error.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\a0d7805fc10655ce8a256c7a5d1fc0eefb87bafd\\output\\res\\color\\design_error.xml"
-    },
-    {
-        "merged": "D:\\zhp.sdk\\SDKTest\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_btn_checkable.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_tint_btn_checkable.xml"
-    },
-    {
-        "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_edittext.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_tint_edittext.xml"
-    },
-    {
-        "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_track.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_tint_switch_track.xml"
-    },
-    {
-        "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
-    },
-    {
-        "merged": "D:\\zhp.sdk\\SDKTest\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_secondary_text_material_light.xml"
-    },
-    {
-        "merged": "D:\\zhp.sdk\\SDKTest\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_edittext.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_tint_edittext.xml"
-    },
-    {
-        "merged": "D:\\zhp.sdk\\SDKTest\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+        "source": "C:\\Users\\01432709\\.android\\build-cache\\886211bbcc9f5420978530ac26400246aa3b5377\\output\\res\\color\\abc_btn_colored_borderless_text_material.xml"
     },
     {
         "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_default.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_tint_default.xml"
+        "source": "C:\\Users\\01432709\\.android\\build-cache\\886211bbcc9f5420978530ac26400246aa3b5377\\output\\res\\color\\abc_tint_default.xml"
     },
     {
-        "merged": "D:\\zhp.sdk\\SDKTest\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_track.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_tint_switch_track.xml"
+        "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
+        "source": "C:\\Users\\01432709\\.android\\build-cache\\886211bbcc9f5420978530ac26400246aa3b5377\\output\\res\\color\\abc_search_url_text.xml"
     },
     {
-        "merged": "D:\\zhp.sdk\\SDKTest\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_thumb.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_tint_switch_thumb.xml"
+        "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_seek_thumb.xml",
+        "source": "C:\\Users\\01432709\\.android\\build-cache\\886211bbcc9f5420978530ac26400246aa3b5377\\output\\res\\color\\abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
+        "source": "C:\\Users\\01432709\\.android\\build-cache\\886211bbcc9f5420978530ac26400246aa3b5377\\output\\res\\color\\switch_thumb_material_light.xml"
     },
     {
         "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_secondary_text_material_dark.xml"
+        "source": "C:\\Users\\01432709\\.android\\build-cache\\886211bbcc9f5420978530ac26400246aa3b5377\\output\\res\\color\\abc_secondary_text_material_dark.xml"
     },
     {
         "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_error.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\a0d7805fc10655ce8a256c7a5d1fc0eefb87bafd\\output\\res\\color\\design_error.xml"
+        "source": "C:\\Users\\01432709\\.android\\build-cache\\e9db0a85ffde7cb3ebd8c948e0a6fa2586e5f201\\output\\res\\color\\design_error.xml"
     },
     {
-        "merged": "D:\\zhp.sdk\\SDKTest\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_seek_thumb.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_tint_seek_thumb.xml"
-    },
-    {
-        "merged": "D:\\zhp.sdk\\SDKTest\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\switch_thumb_material_light.xml"
-    },
-    {
-        "merged": "D:\\zhp.sdk\\SDKTest\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_search_url_text.xml"
-    },
-    {
-        "merged": "D:\\zhp.sdk\\SDKTest\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_tint_password_toggle.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\a0d7805fc10655ce8a256c7a5d1fc0eefb87bafd\\output\\res\\color\\design_tint_password_toggle.xml"
-    },
-    {
-        "merged": "D:\\zhp.sdk\\SDKTest\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_spinner.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_tint_spinner.xml"
+        "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
+        "source": "C:\\Users\\01432709\\.android\\build-cache\\886211bbcc9f5420978530ac26400246aa3b5377\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
     },
     {
         "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_spinner.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_tint_spinner.xml"
+        "source": "C:\\Users\\01432709\\.android\\build-cache\\886211bbcc9f5420978530ac26400246aa3b5377\\output\\res\\color\\abc_tint_spinner.xml"
+    },
+    {
+        "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
+        "source": "C:\\Users\\01432709\\.android\\build-cache\\886211bbcc9f5420978530ac26400246aa3b5377\\output\\res\\color\\abc_primary_text_material_dark.xml"
     },
     {
         "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_tint_password_toggle.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\a0d7805fc10655ce8a256c7a5d1fc0eefb87bafd\\output\\res\\color\\design_tint_password_toggle.xml"
+        "source": "C:\\Users\\01432709\\.android\\build-cache\\e9db0a85ffde7cb3ebd8c948e0a6fa2586e5f201\\output\\res\\color\\design_tint_password_toggle.xml"
     },
     {
-        "merged": "D:\\zhp.sdk\\SDKTest\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_primary_text_material_dark.xml"
-    },
-    {
-        "merged": "D:\\zhp.sdk\\SDKTest\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
-    },
-    {
-        "merged": "D:\\zhp.sdk\\SDKTest\\app\\build\\intermediates\\res\\merged\\debug\\color\\tab_selector.xml",
-        "source": "D:\\zhp.sdk\\SDKTest\\app\\src\\main\\res\\color\\tab_selector.xml"
+        "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
+        "source": "C:\\Users\\01432709\\.android\\build-cache\\886211bbcc9f5420978530ac26400246aa3b5377\\output\\res\\color\\abc_primary_text_material_light.xml"
     },
     {
         "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\switch_thumb_material_dark.xml"
+        "source": "C:\\Users\\01432709\\.android\\build-cache\\886211bbcc9f5420978530ac26400246aa3b5377\\output\\res\\color\\switch_thumb_material_dark.xml"
     },
     {
         "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_secondary_text_material_light.xml"
+        "source": "C:\\Users\\01432709\\.android\\build-cache\\886211bbcc9f5420978530ac26400246aa3b5377\\output\\res\\color\\abc_secondary_text_material_light.xml"
     },
     {
-        "merged": "D:\\zhp.sdk\\SDKTest\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_secondary_text_material_dark.xml"
+        "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_edittext.xml",
+        "source": "C:\\Users\\01432709\\.android\\build-cache\\886211bbcc9f5420978530ac26400246aa3b5377\\output\\res\\color\\abc_tint_edittext.xml"
+    },
+    {
+        "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_track.xml",
+        "source": "C:\\Users\\01432709\\.android\\build-cache\\886211bbcc9f5420978530ac26400246aa3b5377\\output\\res\\color\\abc_tint_switch_track.xml"
     },
     {
         "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_thumb.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color\\abc_tint_switch_thumb.xml"
+        "source": "C:\\Users\\01432709\\.android\\build-cache\\886211bbcc9f5420978530ac26400246aa3b5377\\output\\res\\color\\abc_tint_switch_thumb.xml"
     }
 ]

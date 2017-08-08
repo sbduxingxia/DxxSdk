@@ -1,18 +1,10 @@
 [
     {
-        "merged": "D:\\zhp.sdk\\SDKTest\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
-    },
-    {
         "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
-    },
-    {
-        "merged": "D:\\zhp.sdk\\SDKTest\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
+        "source": "C:\\Users\\01432709\\.android\\build-cache\\886211bbcc9f5420978530ac26400246aa3b5377\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
     },
     {
         "merged": "D:\\zhp.sdk\\ZhpSdk\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
-        "source": "C:\\Users\\01432709\\.android\\build-cache\\512942c8a60e713afc12376bc68a720b74b348eb\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+        "source": "C:\\Users\\01432709\\.android\\build-cache\\886211bbcc9f5420978530ac26400246aa3b5377\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
     }
 ]
