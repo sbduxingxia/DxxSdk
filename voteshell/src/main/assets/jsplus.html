@@ -1,0 +1,28 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>js插件测试</title>
+</head>
+<h2>ZhpBase插件及其方法说明</h2>
+<h3>方法：getDeviceId()</h3>
+调用方式
+<button onClick="javascript:alert('设备IMEI：'+HaierWeb.getDeviceId()+'');">获取设备IMEI值</button>
+<br/>
+调用方式
+<button onClick="save(1234)">存储用户信息</button>
+<br/>
+调用方式
+<button onClick="freshMessage()">刷新消息</button>
+
+<script type="text/javascript">
+    <!--console.log(ZhpBase.getDeviceId());-->
+    function save(uid){
+        HLocalJs.saveUid(uid);//存储用户id
+    }
+    function freshMessage(){
+        HLocalJs.freshUnreadMessage();//刷新消息
+    }
+
+</script>
+</html>

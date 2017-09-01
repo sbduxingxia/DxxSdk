@@ -1,0 +1,4 @@
+keyAlias 'zhangwei'
+keyPassword 'rrs123'
+storeFile file('keystore.jks')
+storePassword 'rrs123'

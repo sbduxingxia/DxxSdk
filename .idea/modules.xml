@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ZhpSdk.iml" filepath="$PROJECT_DIR$/ZhpSdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/webshell/webshell.iml" filepath="$PROJECT_DIR$/webshell/webshell.iml" />
+      <module fileurl="file://$PROJECT_DIR$/voteshell/voteshell.iml" filepath="$PROJECT_DIR$/voteshell/voteshell.iml" />
       <module fileurl="file://$PROJECT_DIR$/zhpframe/zhpframe.iml" filepath="$PROJECT_DIR$/zhpframe/zhpframe.iml" />
     </modules>
   </component>

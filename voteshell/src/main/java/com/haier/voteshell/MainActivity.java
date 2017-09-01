@@ -1,4 +1,4 @@
-package com.haier.webshell;
+package com.haier.voteshell;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -9,12 +9,11 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.webkit.ConsoleMessage;
 import android.webkit.DownloadListener;
-import android.webkit.JavascriptInterface;
 import android.webkit.JsPromptResult;
 import android.webkit.JsResult;
 import android.webkit.ValueCallback;
@@ -25,9 +24,9 @@ import android.webkit.WebViewClient;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 
-import com.haier.webshell.service.BaseService;
+import com.haier.voteshell.R;
+import com.haier.voteshell.service.BaseService;
 import com.zhp.sdk.BaseApp;
-import com.zhp.sdk.Tip;
 import com.zhp.sdk.utils.FileUtils;
 import com.zhp.sdk.utils.SharedPreferencesUtils;
 import com.zhp.sdk.utils.StringUtils;
@@ -41,6 +40,7 @@ import java.util.ArrayList;
  */
 
 public class MainActivity extends Activity {
+    private final String TAG = getClass().getSimpleName();
     private static final String ARG_TITLE = "arg_title";
     private static final String ARG_URL = "arg_url";
     private static final String ARG_PLUS = "arg_plus";
@@ -54,18 +54,18 @@ public class MainActivity extends Activity {
     //http://123.103.113.194:8090/russiaFactory/factory/login.jsp";//http://lapp.haier.net:8090/russiaFactory/factory/login.jsp";//"file:///android_asset/jsplus.html";//
     String title = null;
 
-
+    private final static String APP_CACAHE_DIRNAME = "voteCache";
     private ValueCallback<Uri> mUploadMessage;
 
     private ValueCallback<Uri[]> mUploadMessages;
-    SwipeRefreshLayout swipeRefreshLayout;
+//    SwipeRefreshLayout swipeRefreshLayout;
     ArrayList<IJsPlus> jsPlus = new ArrayList<>();
     ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.zp_layout_web);
+        setContentView(R.layout.activity_layout_web);
         initViews();
         if (TextUtils.isEmpty(url)) {
             this.url = (String) SharedPreferencesUtils.getParam(getApplicationContext(), ARG_URL, "");
@@ -73,6 +73,7 @@ public class MainActivity extends Activity {
         if (TextUtils.isEmpty(url)) {
             inputUrlDialog();
         }
+        deletaCache();
         //长按更换地址
 //        longClickListener();
         WebSettings webSettings = webView.getSettings();
@@ -84,6 +85,18 @@ public class MainActivity extends Activity {
         webSettings.setLoadWithOverviewMode(true);
         webSettings.setCacheMode(WebSettings.LOAD_NO_CACHE);
         webSettings.setDomStorageEnabled(true);
+
+        String cacheDirPath = getFilesDir().getAbsolutePath()+APP_CACAHE_DIRNAME;
+//      String cacheDirPath = getCacheDir().getAbsolutePath()+Constant.APP_DB_DIRNAME;
+        Log.i(TAG, "cacheDirPath="+cacheDirPath);
+        webView.clearCache(true);
+        webView.clearHistory();
+        //设置数据库缓存路径
+        webView.getSettings().setDatabasePath(cacheDirPath);
+        //设置  Application Caches 缓存目录
+        webView.getSettings().setAppCachePath(cacheDirPath);
+        //开启 Application Caches 功能
+        webView.getSettings().setAppCacheEnabled(true);
         webView.setWebChromeClient(new WebChromeClient() {
             @Override
             public boolean onConsoleMessage(ConsoleMessage consoleMessage) {
@@ -108,7 +121,8 @@ public class MainActivity extends Activity {
 
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
-                if (swipeRefreshLayout != null) {
+
+                /*if (swipeRefreshLayout != null) {
                     if (swipeRefreshLayout.isRefreshing() && newProgress == 100) {
                         swipeRefreshLayout.post(new Runnable() {
                             @Override
@@ -126,7 +140,7 @@ public class MainActivity extends Activity {
                             }
                         });
                     }
-                }
+                }*/
 
                 if (newProgress == 100) {
                     newProgress = 0;
@@ -236,12 +250,15 @@ public class MainActivity extends Activity {
             }
 
         });
-        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                webView.reload();
-            }
-        });
+        /*if(swipeRefreshLayout!=null){
+            swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+                @Override
+                public void onRefresh() {
+                    webView.reload();
+                }
+            });
+        }*/
+
 
         webView.setDownloadListener(new DownloadListener() {
             @Override
@@ -262,9 +279,9 @@ public class MainActivity extends Activity {
                 webView.addJavascriptInterface(iJsPlus.getPlusObject(), iJsPlus.getPlusName());
             }
         }
-        initLocalJSInterface();
-        loadUrl(url+"?imei="+ BaseApp.getInstance().getDeviceConfig().deviceId);
-        BaseService.startBaseService(getApplicationContext());
+        loadUrl(url+"?imei="+ BaseApp.getInstance().getDeviceConfig().deviceId+"&random="+System.currentTimeMillis()
+        +"&version="+String.valueOf(BaseApp.getInstance().getDeviceConfig().versionCode));
+//        BaseService.startBaseService(getApplicationContext());
 //        testShortCut();
     }
 
@@ -273,32 +290,7 @@ public class MainActivity extends Activity {
         SharedPreferencesUtils.setParam(getApplicationContext(), ARG_UID, "9992");
     }
 
-    private void initLocalJSInterface() {
-        if (webView != null) {
-            webView.addJavascriptInterface(new HLocalJs(), "HLocalJs");
 
-        }
-    }
-
-    class HLocalJs {
-        public HLocalJs() {
-
-        }
-
-        @JavascriptInterface
-        public boolean saveUid(String uid) {
-            SharedPreferencesUtils.setParam(getApplicationContext(), ARG_UID, uid);
-//            Tip.show("已将用户ID:"+uid+" 存到本地");
-            return true;
-        }
-
-        @JavascriptInterface
-        public boolean freshUnreadMessage() {
-            BaseService.addOneCommand(System.currentTimeMillis());
-//            Tip.show("已收到刷新未读消息的请求，请求用户ID:"+SharedPreferencesUtils.getParam(getApplicationContext(), ARG_UID,""));
-            return true;
-        }
-    }
     private void loadUrl(String url) {
         if (TextUtils.isEmpty(url)) {
             webView.loadUrl("about:blank");
@@ -313,7 +305,7 @@ public class MainActivity extends Activity {
     }
 
     private void initViews() {
-        swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.web_swipeRefreshLayout);
+//        swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.web_swipeRefreshLayout);
         webView = (WebView) findViewById(R.id.web_webv);
         progressBar = (ProgressBar) findViewById(R.id.web_load_progress);
     }
@@ -354,8 +346,7 @@ public class MainActivity extends Activity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
-        finish();
+        return;
     }
 
     public void setUrl(String url) {
@@ -456,5 +447,53 @@ public class MainActivity extends Activity {
                 return true;
             }
         });
+    }
+    private void deletaCache(){
+        //清理Webview缓存数据库
+        try {
+            deleteDatabase("webview.db");
+            deleteDatabase("webviewCache.db");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        //WebView 缓存文件
+        File appCacheDir = new File(getFilesDir().getAbsolutePath()+APP_CACAHE_DIRNAME);
+        Log.e(TAG, "appCacheDir path="+appCacheDir.getAbsolutePath());
+
+        File webviewCacheDir = new File(getCacheDir().getAbsolutePath()+"/webviewCache");
+        Log.e(TAG, "webviewCacheDir path="+webviewCacheDir.getAbsolutePath());
+
+        //删除webview 缓存目录
+        if(webviewCacheDir.exists()){
+            deleteFile(webviewCacheDir);
+        }
+        //删除webview 缓存 缓存目录
+        if(appCacheDir.exists()){
+            deleteFile(appCacheDir);
+        }
+    }
+    /**
+     * 递归删除 文件/文件夹
+     *
+     * @param file
+     */
+    public void deleteFile(File file) {
+
+        Log.i(TAG, "delete file path=" + file.getAbsolutePath());
+
+        if (file.exists()) {
+            if (file.isFile()) {
+                file.delete();
+            } else if (file.isDirectory()) {
+                File files[] = file.listFiles();
+                for (int i = 0; i < files.length; i++) {
+                    deleteFile(files[i]);
+                }
+            }
+            file.delete();
+        } else {
+            Log.e(TAG, "delete file no exists " + file.getAbsolutePath());
+        }
     }
 }
