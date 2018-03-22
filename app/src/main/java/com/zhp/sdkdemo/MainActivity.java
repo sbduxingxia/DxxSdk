@@ -73,7 +73,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        if (v.getId() == R.id.diy_flow) {
+        if (v.getId() == R.id.zbar_scan) {
+            gotoIntent(ZbarScanActivity.class);
+        } else if (v.getId() == R.id.diy_flow) {
             gotoIntent(TagFlowActivity.class);
         } else if (v.getId() == R.id.open_web) {
             gotoIntent(WebActivity.createIntent(this, "file:///android_asset/jsplus.html", "js插件测试"));

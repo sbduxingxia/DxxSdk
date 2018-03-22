@@ -48,8 +48,10 @@ public class MainActivity extends Activity {
     public static final String ARG_TERMINAL = "arg_terminal";//时间间隔
     private final static int FILECHOOSER_RESULTCODE = 1;
     private final static int FILESCHOOSER_RESULTCODE = 2;
+    private final static String IphoneUserAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1";
+    private final static String WeChatUserAgent = "MicroMessenger/5.0.1";
     WebView webView;
-    protected String url = "http://lb.haier.net/votelist";
+    protected String url = "https://bank.wenjuan.com/s2/59ad0fe7c976d857cb4121f8?from=timeline";//http://lb.haier.net/votelist";
            // "http://b2eapp.speedws.com:8090/russiaFactory/factory/login.jsp";// "http://123.103.113.194:8090/russiaFactory/factory/login.jsp";
     //http://123.103.113.194:8090/russiaFactory/factory/login.jsp";//http://lapp.haier.net:8090/russiaFactory/factory/login.jsp";//"file:///android_asset/jsplus.html";//
     String title = null;
@@ -84,6 +86,7 @@ public class MainActivity extends Activity {
         webSettings.setLoadWithOverviewMode(true);
         webSettings.setCacheMode(WebSettings.LOAD_NO_CACHE);
         webSettings.setDomStorageEnabled(true);
+        webSettings.setUserAgentString(webSettings.getUserAgentString()+" "+WeChatUserAgent);
         webView.setWebChromeClient(new WebChromeClient() {
             @Override
             public boolean onConsoleMessage(ConsoleMessage consoleMessage) {

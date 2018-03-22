@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.dengtakaoshi.MainActivity">
+    <WebView android:layout_width="match_parent" android:layout_height="match_parent"
+        android:id="@+id/kaoshi_web"></WebView>
+
+    <ProgressBar android:id="@+id/web_load_progress" android:layout_width="match_parent"
+        style="?android:attr/progressBarStyleHorizontal" android:layout_height="1dp"
+        android:max="100" android:progress="40"
+        android:progressDrawable="@drawable/x_progress_bar" />
+    <LinearLayout android:id="@+id/bottom_lnly" android:layout_width="match_parent"
+        android:layout_height="60dp" android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <Button android:id="@+id/auto_get_answer" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:background="@color/title_bg"
+            android:layout_weight="2" android:textSize="16dp"
+            android:textColor="@android:color/white" android:layout_marginRight="2dp"
+            android:text="获取答案" />
+        <Button android:id="@+id/auto_answer" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:background="@color/title_bg"
+            android:textColor="@android:color/white" android:textSize="16dp"
+            android:layout_weight="1" android:text="自动答题\r\n(请计时超过30秒后使用)" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,6 +1,5 @@
 package com.zhp.sdk.update;
 
-import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
 
 /**
  * 传入数据时继承的接口

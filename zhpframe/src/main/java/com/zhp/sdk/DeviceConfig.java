@@ -6,6 +6,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.telephony.TelephonyManager;
+import android.text.TextUtils;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -55,6 +56,9 @@ public class DeviceConfig implements IConstKey {
             TelephonyManager tm = (TelephonyManager) BaseApp.getInstance().getSystemService(Context.TELEPHONY_SERVICE);
             StringBuilder sb = new StringBuilder();
             deviceId = tm.getDeviceId();
+            if (TextUtils.isEmpty(deviceId)) {
+                deviceId = "Haier" + System.currentTimeMillis();
+            }
             deviceSoftwareVersion = tm.getDeviceSoftwareVersion();
             networkOperatorName = tm.getNetworkOperatorName();
             isInited = true;

@@ -1,1 +1,1 @@
-include ':app', ':zhpframe', ':voteshell'
+include ':app', ':zhpframe', ':zbar-release'//, ':voteshell', ':webshell', ':dengtakaoshi', ':qrcodecore'

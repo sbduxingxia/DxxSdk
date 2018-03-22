@@ -20,7 +20,7 @@ import java.util.Map;
  * Created by zhp on 2016/11/29.
  */
 
-public class BaseActivity extends AppCompatActivity {
+public class BaseActivity extends AppCompatActivity implements IActivityScreen {
 
     private ToolBarHelper mToolBarHelper;
     private Toolbar toolbar;
@@ -28,6 +28,7 @@ public class BaseActivity extends AppCompatActivity {
     private TextView titleRightTxt;
     private ImageView titleImage;
 
+    @Override
     public boolean skipInvokeBaseActivity() {
         return false;
     }

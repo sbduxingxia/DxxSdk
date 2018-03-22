@@ -244,11 +244,20 @@ public class MainActivity extends Activity {
                     view.getContext().startActivity(intent);
                     // If we return true, onPageStarted, onPageFinished won't be called.
                     return true;
-                } else {
+                } else if (url.endsWith(".apk")) {
+                    //通过uri与Intent来调用系统通知，查看进度
+                    /*Uri uri = Uri.parse(url);
+                    Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                    startActivity(intent);*/
+                    return false;
+                    //	new DownloadThread(url).start();
+                }else {
+                    Log.e(TAG,"override-url:"+url);
+                    webView.clearCache(true);
+                    webView.clearHistory();
                     return super.shouldOverrideUrlLoading(view, url);
                 }
             }
-
         });
         /*if(swipeRefreshLayout!=null){
             swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
@@ -292,6 +301,7 @@ public class MainActivity extends Activity {
 
 
     private void loadUrl(String url) {
+        Log.e(TAG,"init-url:"+url);
         if (TextUtils.isEmpty(url)) {
             webView.loadUrl("about:blank");
         } else {
