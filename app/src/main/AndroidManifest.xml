@@ -42,8 +42,8 @@
         <activity android:name=".DiyViewActivity" />
         <activity android:name=".TagFlowActivity" />
         <activity android:name=".ZbarScanActivity" />
+        <activity android:name=".CircleBarActivity" />
         <service android:name=".service.RecordCallService" />
-
     </application>
 
 </manifest>

@@ -19,6 +19,7 @@ import com.zhp.sdk.loading.LoadingManager;
 import com.zhp.sdk.update.IUpdateInfo;
 import com.zhp.sdk.update.IUpdateListener;
 import com.zhp.sdk.update.UpdateManager;
+import com.zhp.sdk.widget.CircleProgressBar;
 import com.zhp.sdk.widget.popup.ISpannerText;
 import com.zhp.sdk.widget.popup.ListViewPopup;
 import com.zhp.sdk.widget.popup.SpnnerWheelPopup;
@@ -73,7 +74,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        if (v.getId() == R.id.zbar_scan) {
+
+        if (v.getId() == R.id.circle_bar) {
+            gotoIntent(CircleBarActivity.class);
+        } else if (v.getId() == R.id.zbar_scan) {
             gotoIntent(ZbarScanActivity.class);
         } else if (v.getId() == R.id.diy_flow) {
             gotoIntent(TagFlowActivity.class);
